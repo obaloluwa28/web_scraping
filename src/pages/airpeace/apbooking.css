@@ -1,0 +1,16 @@
+.booking-container {
+  background-color: whitesmoke;
+}
+
+.booking-body {
+  height: calc(100vh - 50px);
+  background-color: whitesmoke;
+}
+
+.booking-body-top,
+.booking-body-buttom {
+  width: 100%;
+  height: 40%;
+  background-color: aqua;
+  margin-top: 30px;
+}

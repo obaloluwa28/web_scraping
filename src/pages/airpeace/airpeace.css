@@ -1,0 +1,265 @@
+.maindiv {
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+#heading {
+  width: 100%;
+  /* background-color: aqua; */
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+
+.fieldiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#urllabel {
+  padding: 5px 8px;
+}
+
+#urltxtfield {
+  width: 400px;
+  padding: 5px 8px;
+  color: rgb(129, 125, 125);
+  outline: none;
+}
+
+.buttncontain {
+  display: flex;
+  width: 100%;
+  /* background-color: aqua; */
+  justify-content: center;
+}
+
+#scrapbutton,
+#dwnldbutton {
+  padding: 5px 8px;
+  width: 100px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgba(136, 136, 136, 0.438);
+  cursor: pointer;
+}
+
+#scrapbutton:hover,
+#dwnldbutton:hover {
+  background-color: white;
+}
+
+#scrapbutton {
+  margin-right: 40px;
+}
+
+#dwnldbutton {
+  margin-left: 40px;
+}
+
+.tablecontainer {
+  width: 100%;
+  /* background-color: aqua; */
+  /* margin-top: px; */
+  padding: 10px;
+}
+
+.tablehead {
+  width: 100%;
+  padding: 5px 0px;
+  background-color: rgb(179, 174, 174);
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.headrow {
+  background-color: rgb(179, 174, 174);
+}
+
+#thcell {
+  font-size: 15px;
+  border-right: 1px solid rgb(97, 97, 97);
+  padding: 5px;
+}
+
+#tbcell {
+  border-right: 1px solid rgb(97, 97, 97);
+  padding: 5px;
+}
+
+#scrapedtab {
+  overflow-y: auto;
+  table-layout: auto;
+  width: 100%;
+  max-height: 300px;
+  border-collapse: collapse;
+  border: 1px solid rgba(49, 46, 46, 0.651);
+}
+
+.loadingstatus {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.booking-online {
+  background-color: whitesmoke;
+  height: 500px;
+  padding: 5px 10px;
+}
+
+.booking-online .inner-forn-heading {
+  width: 500px;
+  height: 60px;
+  background-color: rgba(221, 104, 104, 0.795);
+  margin: auto;
+  display: flex;
+  cursor: pointer;
+}
+
+.inner-forn-heading #tab {
+  width: 25%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  border: 0.5px solid white;
+}
+
+.inner-form {
+  padding: 5px 8px;
+  height: calc(100% - 60px);
+  width: 500px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#payin {
+  padding: 5px 10px;
+  border: 0;
+  background-color: #888;
+  border-radius: 10px 0px 0px 10px;
+  color: white;
+}
+
+#select_options {
+  width: calc(100% - 65px);
+  padding: 0px 10px;
+  outline: none;
+}
+
+.paydiv {
+  display: flex;
+  /* background-color: aqua; */
+  width: 100%;
+  height: 40px;
+}
+
+.bodydiv {
+  width: 100%;
+  margin-top: 30px;
+  border: 1px solid rgba(184, 182, 182, 0.575);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.bodydiv-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+  margin-bottom: 5px;
+}
+
+.bodydiv-first-left,
+.bodydiv-first-right {
+  width: 45%;
+  outline: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.bodydiv-trd-left,
+.bodydiv-trd-right {
+  width: 210px;
+  outline: none;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid rgb(193, 192, 192);
+}
+
+.bodydiv-trd-right {
+  margin-left: 25px;
+}
+
+.bodydiv-sec {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.bodydiv-sec-lef {
+  color: rgba(141, 136, 136, 0.959);
+  padding: 5px;
+  border: 1px solid rgba(180, 177, 177, 0.925);
+  cursor: pointer;
+}
+
+.bodydiv-sec-lef:hover {
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.bodydiv-sec-lef-1 {
+  color: rgba(141, 136, 136, 0.959);
+  padding: 5px;
+  border: 1px solid rgba(180, 177, 177, 0.925);
+  cursor: pointer;
+}
+
+.bodydiv-sec-lef-1:hover {
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.proceed {
+  background-color: rgb(26, 25, 25);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+}
+
+.proceed:hover {
+  background-color: rgb(104, 102, 102);
+}
+
+@media screen and (max-width: 550px) {
+  #urltxtfield {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #scrapbutton {
+    margin-right: 10px;
+  }
+
+  #dwnldbutton {
+    margin-left: 10px;
+  }
+}
