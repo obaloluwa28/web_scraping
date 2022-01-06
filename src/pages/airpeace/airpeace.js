@@ -15,8 +15,8 @@ function Airpeace() {
   const [startDate, setStartDate] = useState(new Date());
 
   useEffect(() => {
-    Axios.get("http://localhost:5001/getnewsaves").then((res) =>
-      setScrapedata(res.data)
+    Axios.get("https://me-web-scraper-server.herokuapp.com/getnewsaves").then(
+      (res) => setScrapedata(res.data)
     );
   }, []);
 
@@ -27,7 +27,10 @@ function Airpeace() {
     };
 
     console.log(obj);
-    Axios.post("http://localhost:5001/airpeace", obj).then((res) => {
+    Axios.post(
+      "https://me-web-scraper-server.herokuapp.com/airpeace",
+      obj
+    ).then((res) => {
       console.log("Success");
       console.log(`Response: ${res.data}`);
       setLoading(res.data);
