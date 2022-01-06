@@ -237,6 +237,10 @@
   color: whitesmoke;
 }
 
+.bodyrow {
+  border-bottom: 1px solid #888;
+}
+
 .proceed {
   background-color: rgb(26, 25, 25);
   color: white;

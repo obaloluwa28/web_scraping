@@ -190,16 +190,20 @@ function Airpeace() {
               <th id="thcell">Why Us</th>
               <th id="thcell">Local Content</th>
               <th id="thcell">Address</th>
+              <th id="thcell">Email</th>
+              <th id="thcell">Telephone</th>
             </tr>
           </thead>
           <tbody>
             {scrapedata.map((itemm) => (
-              <tr>
+              <tr className="bodyrow">
                 <td id="tbcell">{itemm.Ourvision}</td>
                 <td id="tbcell">{itemm.Ourmission}</td>
                 <td id="tbcell">{itemm.Whyus}</td>
                 <td id="tbcell">{itemm.Localcontent}</td>
                 <td id="tbcell">{itemm.Address}</td>
+                <td id="tbcell">{itemm.Email}</td>
+                <td id="tbcell">{itemm.Telephone}</td>
               </tr>
             ))}
           </tbody>
