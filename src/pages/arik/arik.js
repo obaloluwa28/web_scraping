@@ -10,10 +10,12 @@ const Arik = () => {
   const [loading, setLoading] = useState();
 
   useEffect(() => {
-    Axios.get("http://localhost:5001/getarik").then((res) => {
-      setScrapedata(res.data);
-      console.log(res.data);
-    });
+    Axios.get("https://me-web-scraper-server.herokuapp.com/getarik").then(
+      (res) => {
+        setScrapedata(res.data);
+        console.log(res.data);
+      }
+    );
   }, []);
 
   const Submitbutton = (e) => {
@@ -23,11 +25,13 @@ const Arik = () => {
     };
 
     console.log(obj);
-    Axios.post("http://localhost:5001/arikair", obj).then((res) => {
-      console.log("Success");
-      console.log(`Response: ${res.data}`);
-      setLoading(res.data);
-    });
+    Axios.post("https://me-web-scraper-server.herokuapp.com/arikair", obj).then(
+      (res) => {
+        console.log("Success");
+        console.log(`Response: ${res.data}`);
+        setLoading(res.data);
+      }
+    );
   };
 
   const handleonchange = (e) => {
